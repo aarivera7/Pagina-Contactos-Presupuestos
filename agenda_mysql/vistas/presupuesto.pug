@@ -1,0 +1,111 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css")
+    meta(charset='utf-8')
+    title Mi sitio web
+
+  body
+    // Cabecera
+    header
+      .logo Mi sitio web
+      nav
+        a(href='/') Inicio
+        a(href='#') Presupuesto
+
+    // Contenido
+    main(class='content')
+      h1 Presupuesto de puesta en marcha de la página web
+
+      div(class='description')
+        h2 Hosting y Dominio
+        p Existen varias opciones para poner esta página en funcionamiento en internet, lo primero que se necesita es un servidor que se encarge hacer el hosting de la página y luego comprar el dominio de la página para que las personas puedan encontrar la página principal. 
+
+      div(class='desglose')
+        h3 Desglose de costos 
+        ul
+          li Hosting y dominio con <a href="https://www.hostinger.com/web-hosting">HostingerUS</a>: $58 al año
+          div.images
+            div.imgdes
+              figure.image
+                img(src="hostinger-hosting.png" height=330)
+              p.center Costo de Hosting
+            div.imgdes
+              figure.image
+                img(src="hostinger-dominio.png" height=280)
+              p.center Costo de dominio
+          p Como se puede ver en las imagenes el coste del hosting más barato en esta página cuesta $4 al mes y el domintio cuesta $10 al año. Ofrece una interfaz grafica web amigable para levantar nuestro servidor. Los servidores de este hosting se encuentran repartidos por todos los Estados Unidos.
+          br
+          br
+
+          li Hosting y dominio en <a href="https://daganet.net/">Daganet</a>: $54.30 al año
+          div.images
+            div.imgdes
+              figure.images
+                img(src="daganet-hosting.png" height=300)
+              p.center Costo de Hosting
+            div.imgdes
+              figure.images
+                img(src="daganet-dominio.png" height=160)
+              p.center Costo de dominio
+          p Como se puede ver en las imagenes el hosting cuesta $39 al año y el dominio cuesta $15.30 al año, este como el anterior ofrece herramientas graficas parecidas. Y este hosting tiene la única diferencia de que sus servidores están aquí en el Ecuador.
+          br
+          br
+          
+          li Hosting y dominio en <a href="https://www.ecuahosting.com.ec/">EcuaHosting</a>: $71 al año
+          div.images
+            div.imgdes
+              figure.images
+                img(src="ecuahosting-hosting.png" height=280)
+              p.center Costo de Hosting
+            div.imgdes
+              figure.images
+                img(src="ecuahosting-dominio.png" height=160)
+              p.center Costo de dominio
+          p 
+          br 
+          br
+
+          li Hosting con <a href="https://www.linode.com/">Linode</a> y dominio en <a href="https://www.networksolutions.com/">NetworkingSolutions</a>: $265 al año
+          div.images
+            div.imgdes
+              figure.images
+                img(src="linode-hosting.png" height=260)
+              p.center Costo de Hosting
+            div.imgdes
+              figure.images
+                img(src="networksolutions-dominio.png" height=120)
+              p.center Costo de dominio
+          li Mantenimiento de la página por un año $250
+          p 
+          br
+          br 
+
+      div(class='description')
+        h2 Opción 2
+        p 
+      
+      div(class='desglose')
+        h3 Desglose de costos 
+        ul
+          li Diseño y desarrollo de la pagina web con WordPress y WooCommerce: $1090
+          li Puesta en producción: $220
+          li Conexión con provedores de pago nacionales $330
+          li Indicaciones al usuario del funcionamiento da la pagina: $140
+          li Compra de dominio: $60
+          li Hosting de la página por un año: $130
+          li Mantenimiento de la página por un año $250 
+      
+      p <strong>Total:</strong> $2220
+
+    // Pie
+    footer
+      a(href='#')
+        i(class='fab fa-facebook-square')
+      a(href='#')
+        i(class='fab fa-twitter-square')
+      a(href='#')
+        i(class='fab fa-instagram')
+      a(href='#')
+        i(class='fab fa-linkedin')

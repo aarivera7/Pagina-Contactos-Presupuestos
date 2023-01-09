@@ -4,13 +4,9 @@
     padding: 0;
     margin: 0;
   }
-
-body{
-    background-color: rgba(0,0,0,.5);
-    color:white
-}
-/* Estilos de la cabecera */
-header {
+  
+  /* Estilos de la cabecera */
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,37 +25,14 @@ header {
     color: #fff;
     text-decoration: none;
   }
-.container{
-    width:70vw;
-    height:73vh;
-    margin:2rem auto;
-    display: flex;
-    flex-direction: column;
-}
-input, button{
-    margin: 1rem 0rem;
-    line-height:1.8rem
-}
-button{
-    background-color: goldenrod;
-    
-}
-.contacto{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-}
-.contacto p{
-    flex:8;
-}
-.contacto span{
-    flex:1;
-    color:tomato;
-    cursor: pointer;
-}
-
-/* Estilos del pie */
-footer {
+  
+  /* main */
+  .content {
+    padding: 2rem;
+  }
+  
+  /* Estilos del pie */
+  footer {
     background-color: #333;
     color: #fff;
     padding: 20px;

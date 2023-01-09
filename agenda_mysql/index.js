@@ -14,12 +14,13 @@ app.set('view engine', 'pug')
 app.use(express.static('./css'))
 app.use(express.static('./vistas'))
 app.use(express.static('./src'))
+app.use(express.static('./images'))
 
 
 app.get('/', function(req, res){
     /* res.send('aplicacion iniciada todo va bien') */
     todos = obtenerContactos()
-    res.render('index', {titulo:'Aplicacion de Conactos', contactos:todos})
+    res.render('index', {titulo:'Aplicación de Contactos', contactos:todos})
 })
 app.get('/mostrar/', function(req, res){
     todos = obtenerContactos()
@@ -39,3 +40,7 @@ app.get('/borrar/:id', function(req, res){
     res.redirect('/')
 })
 
+app.get('/presupuesto/', function(req,res){
+    let id = req.params.id
+    res.render('presupuesto')
+})

@@ -5,12 +5,12 @@ let todos
 const conector = mysql.createConnection(
     {
         host: 'localhost',
-        user: 'Nickgrite',
-        password: 'Ramirito-51',
+        user: 'root',
+        password: '',
         database: 'agenda_contactos'
     }
 )
-
+//'Ramirito-51'
 const conectar = () => {
     conector.connect(err => {
         if(err) throw err
@@ -37,11 +37,6 @@ const borrarContacto = id => {
     const sql = `DELETE FROM agenda where id_contacto=${id}`
     conector.query(sql)
 }
-
-
-
-
-
 
 
 export {agregarContacto, obtenerContactos, borrarContacto}
